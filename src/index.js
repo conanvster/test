@@ -1,13 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {Histogram} from "./histogram/Histogram";
+import {SecondHistogram} from "./histogram/SecondHistogram";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    {/*<Histogram />*/}
+      <div style={{height: "150px"}}></div>
+    <div className="container" id="histogram">
+        <SecondHistogram />
+    </div>
   </React.StrictMode>
 );
 
